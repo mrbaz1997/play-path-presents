@@ -17,7 +17,7 @@ export const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-gaming-orange to-red-500 rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">PP</span>
             </div>
             <span className="text-xl font-bold">
@@ -31,7 +31,7 @@ export const Navigation = () => {
               <a 
                 key={item.name}
                 href={item.href}
-                className="text-muted-foreground hover:text-gaming-orange transition-colors duration-200 font-medium"
+                className="text-muted-foreground hover:text-blue-400 transition-colors duration-200 font-medium"
               >
                 {item.name}
               </a>
@@ -41,17 +41,17 @@ export const Navigation = () => {
           <div className="hidden md:flex items-center space-x-4">
             <Button 
               variant="outline"
-              className="border-gaming-orange text-gaming-orange hover:bg-gaming-orange hover:text-white"
+              className="border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white"
             >
               Portfolio
             </Button>
-            <Button className="bg-gradient-to-r from-gaming-orange to-red-500 hover:from-gaming-orange-light hover:to-red-400 text-white border-0">
+            <Button className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-400 hover:to-blue-500 text-white border-0">
               Hire Us
             </Button>
           </div>
           
           <button 
-            className="md:hidden p-2 text-foreground hover:text-gaming-orange transition-colors"
+            className="md:hidden p-2 text-foreground hover:text-blue-400 transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -65,7 +65,7 @@ export const Navigation = () => {
                 <a 
                   key={item.name}
                   href={item.href}
-                  className="text-muted-foreground hover:text-gaming-orange transition-colors duration-200 font-medium"
+                  className="text-muted-foreground hover:text-blue-400 transition-colors duration-200 font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
@@ -74,11 +74,11 @@ export const Navigation = () => {
               <div className="pt-4 space-y-2">
                 <Button 
                   variant="outline"
-                  className="w-full border-gaming-orange text-gaming-orange hover:bg-gaming-orange hover:text-white"
+                  className="w-full border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white"
                 >
                   Portfolio
                 </Button>
-                <Button className="w-full bg-gradient-to-r from-gaming-orange to-red-500 hover:from-gaming-orange-light hover:to-red-400 text-white border-0">
+                <Button className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-400 hover:to-blue-500 text-white border-0">
                   Hire Us
                 </Button>
               </div>

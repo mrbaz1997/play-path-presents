@@ -63,12 +63,12 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				gaming: {
-					orange: 'hsl(var(--gaming-orange))',
-					'orange-light': 'hsl(var(--gaming-orange-light))',
-					blue: 'hsl(var(--gaming-blue))',
-					purple: 'hsl(var(--gaming-purple))',
-					dark: 'hsl(var(--gaming-dark))',
-					'dark-lighter': 'hsl(var(--gaming-dark-lighter))'
+					orange: 'hsl(var(--blue-primary))',
+					'orange-light': 'hsl(var(--blue-light))',
+					blue: 'hsl(var(--blue-primary))',
+					purple: 'hsl(var(--blue-light))',
+					dark: 'hsl(var(--blue-darker))',
+					'dark-lighter': 'hsl(var(--blue-dark))'
 				}
 			},
 			borderRadius: {

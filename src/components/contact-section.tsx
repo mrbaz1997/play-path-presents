@@ -21,8 +21,8 @@ export const ContactSection = () => {
               <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
-                  <div className="p-3 bg-gaming-orange/20 rounded-lg">
-                    <Mail className="w-5 h-5 text-gaming-orange" />
+                  <div className="p-3 bg-blue-500/20 rounded-lg">
+                    <Mail className="w-5 h-5 text-blue-400" />
                   </div>
                   <div>
                     <p className="font-medium">Email</p>
@@ -31,8 +31,8 @@ export const ContactSection = () => {
                 </div>
                 
                 <div className="flex items-center space-x-4">
-                  <div className="p-3 bg-gaming-blue/20 rounded-lg">
-                    <Phone className="w-5 h-5 text-gaming-blue" />
+                  <div className="p-3 bg-blue-500/20 rounded-lg">
+                    <Phone className="w-5 h-5 text-blue-400" />
                   </div>
                   <div>
                     <p className="font-medium">Phone</p>
@@ -41,8 +41,8 @@ export const ContactSection = () => {
                 </div>
                 
                 <div className="flex items-center space-x-4">
-                  <div className="p-3 bg-gaming-purple/20 rounded-lg">
-                    <MapPin className="w-5 h-5 text-gaming-purple" />
+                  <div className="p-3 bg-blue-500/20 rounded-lg">
+                    <MapPin className="w-5 h-5 text-blue-400" />
                   </div>
                   <div>
                     <p className="font-medium">Location</p>
@@ -56,19 +56,19 @@ export const ContactSection = () => {
               <h4 className="text-lg font-semibold mb-4">What we can help with:</h4>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-gaming-orange rounded-full mr-3" />
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mr-3" />
                   Custom game development
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-gaming-orange rounded-full mr-3" />
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mr-3" />
                   Game design consultation
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-gaming-orange rounded-full mr-3" />
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mr-3" />
                   Art & animation services
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-gaming-orange rounded-full mr-3" />
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mr-3" />
                   Technical support & optimization
                 </li>
               </ul>
@@ -84,7 +84,7 @@ export const ContactSection = () => {
                     <label className="block text-sm font-medium mb-2">First Name</label>
                     <input 
                       type="text" 
-                      className="w-full p-3 bg-gaming-dark-lighter border border-border rounded-lg focus:border-gaming-orange focus:outline-none transition-colors"
+                    className="w-full p-3 bg-gaming-dark-lighter border border-border rounded-lg focus:border-blue-500 focus:outline-none transition-colors"
                       placeholder="John"
                     />
                   </div>
@@ -92,7 +92,7 @@ export const ContactSection = () => {
                     <label className="block text-sm font-medium mb-2">Last Name</label>
                     <input 
                       type="text" 
-                      className="w-full p-3 bg-gaming-dark-lighter border border-border rounded-lg focus:border-gaming-orange focus:outline-none transition-colors"
+                    className="w-full p-3 bg-gaming-dark-lighter border border-border rounded-lg focus:border-blue-500 focus:outline-none transition-colors"
                       placeholder="Doe"
                     />
                   </div>
@@ -102,14 +102,14 @@ export const ContactSection = () => {
                   <label className="block text-sm font-medium mb-2">Email</label>
                   <input 
                     type="email" 
-                    className="w-full p-3 bg-gaming-dark-lighter border border-border rounded-lg focus:border-gaming-orange focus:outline-none transition-colors"
+                    className="w-full p-3 bg-gaming-dark-lighter border border-border rounded-lg focus:border-blue-500 focus:outline-none transition-colors"
                     placeholder="john@example.com"
                   />
                 </div>
                 
                 <div>
                   <label className="block text-sm font-medium mb-2">Project Type</label>
-                  <select className="w-full p-3 bg-gaming-dark-lighter border border-border rounded-lg focus:border-gaming-orange focus:outline-none transition-colors">
+                  <select className="w-full p-3 bg-gaming-dark-lighter border border-border rounded-lg focus:border-blue-500 focus:outline-none transition-colors">
                     <option>Mobile Game</option>
                     <option>PC Game</option>
                     <option>Web Game</option>
@@ -122,14 +122,14 @@ export const ContactSection = () => {
                   <label className="block text-sm font-medium mb-2">Message</label>
                   <textarea 
                     rows={4}
-                    className="w-full p-3 bg-gaming-dark-lighter border border-border rounded-lg focus:border-gaming-orange focus:outline-none transition-colors resize-none"
+                    className="w-full p-3 bg-gaming-dark-lighter border border-border rounded-lg focus:border-blue-500 focus:outline-none transition-colors resize-none"
                     placeholder="Tell us about your project idea..."
                   />
                 </div>
                 
                 <Button 
                   type="submit"
-                  className="w-full bg-gradient-to-r from-gaming-orange to-red-500 hover:from-gaming-orange-light hover:to-red-400 text-white border-0 py-3 font-semibold"
+                  className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-400 hover:to-blue-500 text-white border-0 py-3 font-semibold"
                 >
                   Send Message
                   <Send className="w-4 h-4 ml-2" />

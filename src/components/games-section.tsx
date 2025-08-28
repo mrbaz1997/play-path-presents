@@ -59,13 +59,13 @@ export const GamesSection = () => {
                   <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
                     game.status === 'Released' 
                       ? 'bg-green-500/20 text-green-400 border border-green-500/30' 
-                      : 'bg-gaming-orange/20 text-gaming-orange border border-gaming-orange/30'
+                      : 'bg-blue-500/20 text-blue-400 border border-blue-500/30'
                   }`}>
                     {game.status}
                   </span>
                 </div>
                 <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <Button size="sm" className="bg-gaming-orange hover:bg-gaming-orange-light">
+                  <Button size="sm" className="bg-blue-500 hover:bg-blue-400 text-white">
                     <Play className="w-4 h-4 mr-2" />
                     Play
                   </Button>
@@ -74,10 +74,10 @@ export const GamesSection = () => {
               
               <CardContent className="p-6">
                 <div className="mb-3">
-                  <h3 className="text-xl font-bold mb-2 group-hover:text-gaming-orange transition-colors">
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-blue-400 transition-colors">
                     {game.title}
                   </h3>
-                  <p className="text-sm text-gaming-orange font-medium">{game.genre}</p>
+                  <p className="text-sm text-blue-400 font-medium">{game.genre}</p>
                 </div>
                 
                 <p className="text-muted-foreground mb-4 line-clamp-3">
@@ -97,7 +97,7 @@ export const GamesSection = () => {
                 
                 <Button 
                   variant="outline" 
-                  className="w-full border-gaming-orange/50 text-gaming-orange hover:bg-gaming-orange hover:text-white"
+                  className="w-full border-blue-500/50 text-blue-400 hover:bg-blue-500 hover:text-white"
                 >
                   Learn More
                   <ExternalLink className="w-4 h-4 ml-2" />

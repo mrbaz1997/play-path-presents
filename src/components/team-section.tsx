@@ -45,26 +45,26 @@ export const TeamSection = () => {
           {teamMembers.map((member, index) => (
             <Card key={index} className="game-card text-center group">
               <CardContent className="p-6">
-                <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-gaming-orange to-red-500 rounded-full flex items-center justify-center text-2xl font-bold text-white">
+                <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-2xl font-bold text-white">
                   {member.name.split(' ').map(n => n[0]).join('')}
                 </div>
                 
-                <h3 className="text-xl font-bold mb-2 group-hover:text-gaming-orange transition-colors">
+                <h3 className="text-xl font-bold mb-2 group-hover:text-blue-400 transition-colors">
                   {member.name}
                 </h3>
                 
-                <p className="text-gaming-orange font-medium mb-2">{member.role}</p>
+                <p className="text-blue-400 font-medium mb-2">{member.role}</p>
                 <p className="text-sm text-muted-foreground mb-4">{member.expertise}</p>
                 <p className="text-sm text-muted-foreground mb-6">{member.bio}</p>
                 
                 <div className="flex justify-center space-x-3">
-                  <div className="p-2 bg-gaming-dark-lighter border border-border rounded-lg hover:border-gaming-orange hover:text-gaming-orange transition-colors cursor-pointer">
+                  <div className="p-2 bg-gaming-dark-lighter border border-border rounded-lg hover:border-blue-500 hover:text-blue-400 transition-colors cursor-pointer">
                     <Github className="w-4 h-4" />
                   </div>
-                  <div className="p-2 bg-gaming-dark-lighter border border-border rounded-lg hover:border-gaming-orange hover:text-gaming-orange transition-colors cursor-pointer">
+                  <div className="p-2 bg-gaming-dark-lighter border border-border rounded-lg hover:border-blue-500 hover:text-blue-400 transition-colors cursor-pointer">
                     <Linkedin className="w-4 h-4" />
                   </div>
-                  <div className="p-2 bg-gaming-dark-lighter border border-border rounded-lg hover:border-gaming-orange hover:text-gaming-orange transition-colors cursor-pointer">
+                  <div className="p-2 bg-gaming-dark-lighter border border-border rounded-lg hover:border-blue-500 hover:text-blue-400 transition-colors cursor-pointer">
                     <Twitter className="w-4 h-4" />
                   </div>
                 </div>
