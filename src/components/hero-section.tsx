@@ -21,14 +21,14 @@ export const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             <Button 
               size="lg" 
-              className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-400 hover:to-blue-500 text-white border-0 px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-gradient-to-r from-gaming-orange to-red-500 hover:from-gaming-orange-light hover:to-red-400 text-white border-0 px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
             >
               View Our Games
             </Button>
             <Button 
               variant="outline" 
               size="lg"
-              className="border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white px-8 py-6 text-lg font-semibold transition-all duration-300"
+              className="border-gaming-orange text-gaming-orange hover:bg-gaming-orange hover:text-white px-8 py-6 text-lg font-semibold transition-all duration-300"
             >
               About Our Team
             </Button>
@@ -59,8 +59,8 @@ export const HeroSection = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-gaming-dark/50 to-transparent" />
           </div>
-          <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full opacity-80 blur-xl" />
-          <div className="absolute -top-6 -left-6 w-32 h-32 bg-gradient-to-br from-blue-400 to-blue-500 rounded-full opacity-60 blur-xl" />
+          <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gradient-to-br from-gaming-orange to-red-500 rounded-full opacity-80 blur-xl" />
+          <div className="absolute -top-6 -left-6 w-32 h-32 bg-gradient-to-br from-gaming-blue to-gaming-purple rounded-full opacity-60 blur-xl" />
         </div>
       </div>
     </section>
