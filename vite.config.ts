@@ -4,20 +4,25 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
-  server: {
-    host: "::",
-    port: 8080,
-  },
-  plugins: [
-    react(),
-    mode === "development" && componentTagger(),
-  ].filter(Boolean),
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
+export default defineConfig(({ mode }) => {
+  // Detect repo name from package.json if you want auto
+  // Or keep it hardcoded here:
+  const repoName = "play-path-presents";
+
+  return {
+    server: {
+      host: "::",
+      port: 8080,
     },
-  },
-  // Fix for GitHub Pages deployment
-  base: mode === "production" ? "/play-path-presents/" : "/",
-}));
+    plugins: [
+      react(),
+      mode === "development" && componentTagger(),
+    ].filter(Boolean),
+    resolve: {
+      alias: {
+        "@": path.resolve(__dirname, "./src"),
+      },
+    },
+    base: mode === "production" ? `/${repoName}/` : "/",
+  };
+});
