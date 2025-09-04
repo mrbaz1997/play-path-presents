@@ -19,5 +19,5 @@ export default defineConfig(({ mode }) => ({
     },
   },
   // Fix for GitHub Pages deployment
-  base: mode === "production" ? "./" : "/",
+  base: mode === "production" ? "/play-path-presents/" : "/",
 }));
