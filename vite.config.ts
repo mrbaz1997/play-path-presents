@@ -7,7 +7,7 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => {
   // Detect repo name from package.json if you want auto
   // Or keep it hardcoded here:
-  const repoName = "play-path-presents";
+  const repoName = "death-arc-studio";
 
   return {
     server: {
