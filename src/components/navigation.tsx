@@ -18,11 +18,11 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">PP</span>
+              <span className="text-white font-bold text-sm">DA</span>
             </div>
             <span className="text-xl font-bold">
-              <span className="gradient-text">PlayPath</span>
-              <span className="text-foreground"> Studios</span>
+              <span className="gradient-text">Death Arc</span>
+              <span className="text-foreground"> Studio</span>
             </span>
           </div>
           

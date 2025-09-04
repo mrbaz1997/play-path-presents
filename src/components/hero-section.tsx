@@ -8,9 +8,9 @@ export const HeroSection = () => {
         <div className="space-y-8">
           <div className="space-y-4">
             <h1 className="text-6xl lg:text-7xl font-bold leading-tight">
-              <span className="gradient-text">PlayPath</span>
+              <span className="gradient-text">Death Arc</span>
               <br />
-              <span className="text-foreground">Studios</span>
+              <span className="text-foreground">Studio</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-lg">
               Crafting immersive gaming experiences that transport players to extraordinary worlds. 

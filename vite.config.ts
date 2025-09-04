@@ -18,6 +18,6 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  // 👇 Add this
-  base: mode === "production" ? "/your-repo-name/" : "/", 
+  // Fix for GitHub Pages deployment
+  base: mode === "production" ? "./" : "/",
 }));
