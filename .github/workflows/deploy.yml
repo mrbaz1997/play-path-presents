@@ -8,6 +8,10 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages   # 👈 required for Pages deployment
+      url: ${{ steps.deployment.outputs.page_url }}
+
     permissions:
       contents: read
       pages: write
@@ -35,4 +39,5 @@ jobs:
           path: ./dist
 
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
