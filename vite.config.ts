@@ -1,28 +1,8 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
-import path from "path";
-import { componentTagger } from "lovable-tagger";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
-export default defineConfig(({ mode }) => {
-  // Detect repo name from package.json if you want auto
-  // Or keep it hardcoded here:
-  const repoName = "death-arc-studio";
 
-  return {
-    server: {
-      host: "::",
-      port: 8080,
-    },
-    plugins: [
-      react(),
-      mode === "development" && componentTagger(),
-    ].filter(Boolean),
-    resolve: {
-      alias: {
-        "@": path.resolve(__dirname, "./src"),
-      },
-    },
-    base: mode === "production" ? `/${repoName}/` : "/",
-  };
-});
+export default defineConfig({
+  base: "/death-arc-studio/",
+  plugins: [react()],
+})
